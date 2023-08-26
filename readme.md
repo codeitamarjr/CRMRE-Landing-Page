@@ -4,7 +4,7 @@
 
 ## Overview
 
-This project contains the source code for the Real Enquiries website, which is hosted using GitHub Pages and is accessible at [www.realenquiries.com](https://www.realenquiries.com).
+This project contains the source code for the Real Enquiries website, which is hosted using GitHub Pages and is accessible at [www.realenquiries.com](https://www.realenquiries.com) and [realenquiries.com](https://realenquiries.com).
 
 ## Local Development
 
