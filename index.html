@@ -1,273 +1,408 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-layout-mode="detached" data-topbar-color="dark" data-menu-color="light" data-sidenav-user="true">
 
 <head>
-    <meta charset="UTF-8">
+    <meta charset="utf-8" />
+    <title>Real Enquiries: Your One Stop Solution for all your Real Estate OnBoarding Needs</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Real Enquiries</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
-    <link href="./assets/css/index.css" rel="stylesheet">
-    <link rel="shortcut icon" type="image/x-icon" href="./assets/image/favicon.ico" />
+    <meta content="A CRM for Real Estate Agents to manage their leads and enquiries" name="description" />
+    <!-- App favicon -->
+    <link rel="shortcut icon" href="./assets/images/favicon.ico">
+
+    <!-- Theme Config Js -->
+    <script src="./assets/js/hyper-config.js"></script>
+
+    <!-- App css -->
+    <link href="./assets/css/app-modern.min.css" rel="stylesheet" type="text/css" id="app-style" />
+
+    <!-- Icons css -->
+    <link href="./assets/css/icons.min.css" rel="stylesheet" type="text/css" />
+
 </head>
 
 <body>
 
-    <nav class="navbar navbar-expand-md bg-dark sticky-top border-bottom" data-bs-theme="dark">
+    <!-- NAVBAR START -->
+    <nav class="navbar navbar-expand-lg py-lg-3 navbar-dark">
         <div class="container">
-            <a class="navbar-brand d-md-none" href="#">
-                <svg class="bi" width="24" height="24">
-                    <use xlink:href="#aperture"></use>
-                </svg>
-                Aperture
-            </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvas"
-                aria-controls="#offcanvas" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+                aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <i class="mdi mdi-menu"></i>
             </button>
-            <div class="offcanvas offcanvas-end" tabindex="-1" id="#offcanvas" aria-labelledby="#offcanvasLabel">
-                <div class="offcanvas-header">
-                    <h5 class="offcanvas-title" id="#offcanvasLabel">Aperture</h5>
-                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-                </div>
-                <div class="offcanvas-body">
-                    <ul class="navbar-nav flex-grow-1 justify-content-between">
-                        <li class="nav-item">
-                            <div class="nav-link">Real Enquiries</div>
-                        </li>
-                        <li class="nav-item"><a class="nav-link" href="#marketing">About</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#featurette">Features</a></li>
-                        <li class="nav-item"><a class="nav-link" href="https://crm2.realenquiries.com/login"
-                                target="_blank">Access</a></li>
-                    </ul>
-                </div>
+
+            <!-- menus -->
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+
+                <!-- left menu -->
+                <ul class="navbar-nav me-auto align-items-center">
+                    <li class="nav-item mx-lg-1">
+                        <a class="nav-link active" href="">Home</a>
+                    </li>
+                    <li class="nav-item mx-lg-1">
+                        <a class="nav-link" href="#features">Features</a>
+                    </li>
+                    <li class="nav-item mx-lg-1">
+                        <a class="nav-link" href="#faqs">FAQs</a>
+                    </li>
+                    <li class="nav-item mx-lg-1">
+                        <a class="nav-link" href="#contact">Contact</a>
+                    </li>
+                </ul>
+
+                <!-- right menu -->
+                <ul class="navbar-nav ms-auto align-items-center">
+                    <li class="nav-item me-0">
+                        <a href="https://crm2.realenquiries.com/login" target="_blank"
+                            class="btn btn-sm btn-light rounded-pill d-none d-lg-inline-flex">
+                            <i class="uil uil-lock-access me-2"></i> Access the Customer Experience System
+                        </a>
+                    </li>
+                </ul>
+
             </div>
         </div>
     </nav>
+    <!-- NAVBAR END -->
 
-    <main>
-        <div class="position-relative overflow-hidden p-3 p-md-5 m-md-3 text-center bg-body-tertiary">
-            <div class="col-md-6 p-lg-5 mx-auto my-5">
-                <h1 class="display-3 fw-bold">Welcome to Real Enquiries</h1>
-                <h3 class="fw-normal text-muted mb-3">Simplify, Organize, and Automate Your Property Management.</h3>
-                <h4 class="fw-normal text-muted mb-3">Integrated with Ireland's top AD platform, Daft, we streamline the
-                    rental application process from Enquiry to Occupancy. Manage high volumes of enquiries, schedule
-                    viewings, track applications and occupancy with ease.</h4>
-                <div class="d-flex gap-3 justify-content-center lead fw-normal">
-                    <a class="icon-link" href="#featurette">
-                        Learn more
-                        <svg class="bi">
-                            <use xlink:href="#chevron-right"></use>
-                        </svg>
-                    </a>
-                    <a class="btn btn-primary" href="mailto:contact@realenquiries.com">
-                        Contact-us
-                    </a>
-                </div>
-            </div>
-            <div id="marketing"></div>
-            <div class="product-device shadow-sm d-none d-md-block"></div>
-            <div class="product-device product-device-2 shadow-sm d-none d-md-block"></div>
-        </div>
-
-
-        <div class="container marketing">
-            <!-- Three columns of text below the carousel -->
-            <div class="row">
-                <div class="col-lg-4">
-                    <img class="bd-placeholder-img rounded-circle" width="140" height="140"
-                        src="./assets/image/daft.png" alt="Daft">
-                    <h2 class="fw-normal">Manage enquiries from Daft</h2>
-                    <p>Real Enquiries has direct integration with Ireland's leading AD platform, Daft.</p>
-                </div>
-                <!-- /.col-lg-4 -->
-                <div class="col-lg-4">
-                    <img class="bd-placeholder-img" width="140" height="140" src="./assets/image/HUB.jpeg"
-                        alt="Application HUB">
-                    <h2 class="fw-normal">Potential tenants easily apply and monitor their application</h2>
-                    <p>We've revolutionised the tenant application process with our modern Application HUB.</p>
-                </div>
-                <!-- /.col-lg-4 -->
-                <div class="col-lg-4">
-                    <img class="bd-placeholder-img " width="140" height="140" src="./assets/image/doc.jpeg"
-                        alt="Documents">
-                    <h2 class="fw-normal">Manage applications and send necessary documents</h2>
-                    <p>Real Enquiries offers an intuitive interface for managing applications received, assessing
-                        profiles, and deciding outcomes.</p>
-                </div>
-                <!-- /.col-lg-4 -->
-            </div>
-            <!-- /.row -->
-
-            <!-- START THE FEATURETTES -->
-
-            <hr class="featurette-divider" id="featurette">
-
-            <div class="row featurette">
-                <div class="col-md-7">
-                    <h2 class="featurette-heading fw-normal lh-1">Manage Enquiries <span
-                            class="text-body-secondary">Effortlessly</span></h2>
-                    <p class="lead">Real Enquiries integrates directly with Daft, Ireland's top property advertising
-                        platform. This means you get all your enquiries funneled into one place, systematically
-                        organized for your convenience.</p>
-                </div>
+    <!-- START HERO -->
+    <section class="hero-section">
+        <div class="container">
+            <div class="row align-items-center">
                 <div class="col-md-5">
-                </div>
-            </div>
-
-            <hr class="featurette-divider">
-
-            <div class="row featurette">
-                <div class="col-md-7 order-md-2">
-                    <h2 class="featurette-heading fw-normal lh-1"><span class="text-body-secondary">Tenant
-                            Application</span> Made Easy</h2>
-                    <p class="lead">Tenants can use our modern Application HUB to create an account, upload their
-                        personal documents, and keep track of their application's status in real time. It’s a
-                        game-changer for the tenant application experience.</p>
-                </div>
-                <div class="col-md-5 order-md-1">
-                </div>
-            </div>
-
-            <hr class="featurette-divider">
-
-            <div class="row featurette">
-                <div class="col-md-7">
-                    <h2 class="featurette-heading fw-normal lh-1">What is the <span class="text-body-secondary">RTB
-                            integration</span> and how does it benefit me?</h2>
-                    <p class="lead">The Residential Tenancies Board (RTB) integration in Real Enquiries allows you to
-                        easily check the registration status of your properties. It ensures that you always know which
-                        properties are regulated and registered with RTB and which ones are pending, keeping you
-                        compliant and informed at all times.</p>
-                </div>
-                <div class="col-md-5">.
-                </div>
-            </div>
-
-            <hr class="featurette-divider">
-
-            <div class="row featurette">
-                <div class="col-md-7 order-md-2">
-                    <h2 class="featurette-heading fw-normal lh-1"><span class="text-body-secondary">Streamline</span>
-                        Documents Management on <span class="text-body-secondary">DocuSign</span></h2>
-                    <p class="lead">With our DocuSign integration, you can generate and send necessary documents like
-                        leases, licenses, and addendums with just a few clicks, streamlining the whole process.
-                    </p>
-                </div>
-                <div class="col-md-5">
-                </div>
-            </div>
-
-            <hr class="featurette-divider">
-            <div class="row featurette">
-                <div class="col-md-7">
-                    <h2 class="featurette-heading fw-normal lh-1">Unlock Efficiencies with <span
-                            class="text-body-secondary">Re-Leased Integration</span></h2>
-                    <p class="lead">
-                        Integrate your Real Enquiries and Re-Leased accounts for a streamlined property management
-                        experience. By linking the two platforms, you can manage your properties and tenancies in
-                        Re-Leased while
-                        handling enquiries and applications in Real Enquiries.
-                    </p>
-                </div>
-                <div class="col-md-5">
-                </div>
-            </div>
-
-
-            <hr class="featurette-divider">
-
-            <div class="row featurette">
-                <div class="col-md-7 order-md-2">
-                    <h2 class="featurette-heading fw-normal lh-1">Do I need to <span class="text-body-secondary">install
-                            any software</span> to use Real Enquiries?</h2>
-                    <p class="lead">No, Real Enquiries is a Software as a Service (SaaS) solution. You don't need to
-                        install any software - simply log in from your browser on any device and get started.
-                    </p>
-                </div>
-                <div class="col-md-5">
-                </div>
-            </div>
-
-            <hr class="featurette-divider">
-
-            <div class="row featurette">
-                <div class="col-md-7">
-                    <h2 class="featurette-heading fw-normal lh-1">How does Real Enquiries ensure my <span
-                            class="text-body-secondary">data is secure</span>?</h2>
-                    <p class="lead">We take data security seriously. Real Enquiries is hosted on Amazon's reliable and
-                        secure services - EC2, RDS, SES, and S3. These platforms offer robust security measures,
-                        ensuring that your data is always protected.
-                    </p>
-                </div>
-                <div class="col-md-5">
-                </div>
-            </div>
-            <!-- /END THE FEATURETTES -->
-        </div>
-
-
-        <h1 class="visually-hidden">Heroes</h1>
-
-        <div class="position-relative overflow-hidden p-3 p-md-5 m-md-3 text-center bg-body-tertiary">
-            <div class="px-4 py-5 my-5 text-center">
-                <img class="d-block mx-auto mb-4" src="./assets/image/real_enquiries.png" alt="" width="72" height="57">
-                <h3 class="display-6 fw-bold text-body-emphasis">Unlock effortless property management with Real
-                    Enquiries - your one-stop
-                    solution for seamless tenant onboarding and insightful tracking.</h3>
-                <div class="d-grid gap-2 d-sm-flex justify-content-sm-center">
-                    <a class="btn btn-primary btn-lg px-4 gap-3" href="mailto:contact@realenquiries.com"
-                        role="button">Contact
-                    </a>
-                </div>
-            </div>
-        </div>
-
-        <div class="container mt-5 mb-5">
-            <div class="row g-2 justify-content-center">
-                <div class="col-md-6">
-                    <div class="card p-3 text-center px-4">
-                        <div class="user-image">
-                            <img src="./assets/image/me.jpeg" class="rounded-circle" width="80" />
+                    <div class="mt-md-4">
+                        <div>
+                            <span class="badge bg-danger font-13 rounded-pill">New</span>
+                            <span class="text-white-50 ms-1">Welcome to new landing page</span>
                         </div>
-                        <div class="user-content">
-                            <h5 class="mb-0">Itamar Junior</h5>
-                            <span class="text-muted">Founder, Real Enquiries</span>
-                            <div class="text-md-start">
-                                <p class="mb-3">Dear Prospective Users,</p>
-                                <p class="mb-3">As a software engineer entrenched in property management, I've
-                                    experienced the frustrations of dealing with high enquiry volumes and disjointed
-                                    onboarding processes in the Irish market. I understand the need for a more
-                                    streamlined, efficient solution.</p>
-                                <p class="mb-3">This is why I created Real Enquiries.</p>
-                                <p class="mb-3">Our platform is designed to simplify your workload by integrating with
-                                    Daft, Ireland's leading AD platform, and offering a unified space for managing
-                                    enquiries, viewings, and tenant onboarding. Our integration with DocuSign and RTB
-                                    ensures effortless paperwork and compliance handling.</p>
-                                <p class="mb-3">Experience property management as it should be – efficient, organized,
-                                    and stress-free. Welcome to Real Enquiries - your one-stop solution for simplified
-                                    property management.</p>
-                                <p class="mb-0">Sincerely,</p>
-                                <p>Itamar Junior</p>
-                            </div>
+                        <h2 class="text-white fw-normal mb-4 mt-3 lh-base">
+                            Welcome to Real Enquiries
+                        </h2>
 
-                        </div>
+                        <p class="mb-4 font-16 text-white-50">
+                            Integrated with Ireland's top AD platform, Daft, we streamline the
+                            rental application process from Enquiry to Occupancy. Manage high volumes of enquiries,
+                            schedule
+                            viewings, track applications and occupancy with ease.
+                        </p>
+
+                        <a href="mailto:contact@realenquiries.com" target="_blank"
+                            class="btn btn-lg font-16 btn-success">Contact us <i
+                                class="mdi mdi-arrow-right ms-1"></i></a>
+                    </div>
+                </div>
+                <div class="col-md-5 offset-md-2">
+                    <div class="text-md-end mt-3 mt-md-0">
+                        <img src="./assets/images/svg/startup.svg" alt="" class="img-fluid" />
                     </div>
                 </div>
             </div>
         </div>
+    </section>
+    <!-- END HERO -->
 
-    </main>
+    <!-- START FEATURES -->
+    <section class="py-5" id="features">
+        <div class="container">
+            <div class="row py-4">
+                <div class="col-lg-12">
+                    <div class="text-center">
+                        <h1 class="mt-0"><i class="mdi mdi-rocket"></i></h1>
+                        <h3>Empowering Your Business With <span class="text-primary">Innovative Solutions</span></h3>
+                        <p class="text-muted mt-2">Our software is designed to make your business more efficient,
+                            profitable, and competitive.</p>
+                    </div>
+                </div>
+            </div>
 
-    <footer class="pt-5 my-5 mt-5 mb-5 text-body-secondary border-top text-center">
-        <div class="">
-            Real Enquiries &copy; 2023
+            <div class="row">
+                <div class="col-lg-4 col-md-6">
+                    <div class="text-center p-2 p-sm-3">
+                        <div class="avatar-sm m-auto">
+                            <span class="avatar-title bg-primary-lighten rounded-circle">
+                                <i class="mdi mdi-email text-primary font-24"></i>
+                            </span>
+                        </div>
+                        <h4 class="mt-3">Manage enquiries from Daft
+                        </h4>
+                        <p class="text-muted mt-2 mb-0">Real Enquiries has direct integration with Ireland's leading AD
+                            platform, Daft.</p>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6">
+                    <div class="text-center p-2 p-sm-3">
+                        <div class="avatar-sm m-auto">
+                            <span class="avatar-title bg-primary-lighten rounded-circle">
+                                <i class="uil uil-user-square text-primary font-24"></i>
+                            </span>
+                        </div>
+                        <h4 class="mt-3">Potential tenants easily apply and monitor their application</h4>
+                        <p class="text-muted mt-2 mb-0">We've revolutionised the tenant application process with our
+                            modern Application HUB.</p>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6">
+                    <div class="text-center p-2 p-sm-3">
+                        <div class="avatar-sm m-auto">
+                            <span class="avatar-title bg-primary-lighten rounded-circle">
+                                <i class="uil uil-file-edit-alt text-primary font-24"></i>
+                            </span>
+                        </div>
+                        <h4 class="mt-3">Manage applications and send necessary documents</h4>
+                        <p class="text-muted mt-2 mb-0">Our top-notch security features protect your data and ensure
+                            compliance.</p>
+                    </div>
+                </div>
+
+                <!-- Add more features here, or customize as needed -->
+            </div>
+
+        </div>
+    </section>
+    <!-- END FEATURES -->
+
+    <!-- START FEATURES 2 -->
+    <section class="py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="text-center">
+                        <h1>Manage Your Real Estate Business with Ease</h1>
+                        <h3>Features you'll <span class="text-danger">love</span></h3>
+                        <p class="text-muted mt-2">Real Enquiries offers a streamlined, efficient approach to real
+                            estate management</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row mt-2 py-5 align-items-center">
+                <div class="col-lg-5 col-md-6">
+                    <img src="./assets/images/svg/features-1.svg" class="img-fluid" alt="">
+                </div>
+                <div class="col-lg-6 offset-md-1 col-md-5">
+                    <h3 class="fw-normal">Inbuilt features</h3>
+                    <p class="text-muted mt-3">Real Enquiries is a comprehensive solution for managing your real estate
+                        business. We offer a wide range of features to help you manage your business with ease.</p>
+
+                    <div class="mt-4">
+                        <p class="text-muted"><i class="mdi mdi-circle-medium text-primary"></i> Organized Dashboard and
+                            Manage your
+                            Inbox </p>
+                        <p class="text-muted"><i class="mdi mdi-circle-medium text-primary"></i> Manage applications and
+                            documents
+                        </p>
+                        <p class="text-muted"><i class="mdi mdi-circle-medium text-primary"></i> Analyze and give an
+                            outcome with clicks
+                        </p>
+                        <p class="text-muted"><i class="mdi mdi-circle-medium text-primary"></i> Issue documents based
+                            on templates</p>
+                    </div>
+
+                    <a href="https://www.linkedin.com/pulse/crm-project-real-enquiries-itamar-atanasio-da-silva-junior/"
+                        class="btn btn-primary rounded-pill mt-3" target="_blank">Read More <i
+                            class="mdi mdi-arrow-right ms-1"></i></a>
+
+                </div>
+            </div>
+
+            <div class="row pb-3 pt-5 align-items-center">
+                <div class="col-lg-6 col-md-5">
+                    <h3 class="fw-normal">Connect with custom API's</h3>
+                    <p class="text-muted mt-3">Real Enquiries connect with custom API's to help you manage your business
+                        with ease.</p>
+
+                    <div class="mt-4">
+                        <p class="text-muted"><i class="mdi mdi-circle-medium text-success"></i> RTBs registration</p>
+                        <p class="text-muted"><i class="mdi mdi-circle-medium text-success"></i> DocuSign</p>
+                        <p class="text-muted"><i class="mdi mdi-circle-medium text-success"></i> Re-Leased</p>
+                    </div>
+
+                    <a href="https://www.linkedin.com/pulse/real-enquiries-exciting-times-ahead-itamar-atanasio-da-silva-junior/"
+                        class="btn btn-success rounded-pill mt-3" target="_blank">Read More <i
+                            class="mdi mdi-arrow-right ms-1"></i></a>
+
+                </div>
+                <div class="col-lg-5 col-md-6 offset-md-1">
+                    <img src="./assets/images/svg/features-2.svg" class="img-fluid" alt="">
+                </div>
+            </div>
+
+        </div>
+    </section>
+    <!-- END FEATURES 2 -->
+
+    <!-- START FAQ -->
+    <section class="py-5" id="faqs">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="text-center">
+                        <h1 class="mt-0"><i class="mdi mdi-frequently-asked-questions"></i></h1>
+                        <h3>Frequently Asked <span class="text-primary">Questions</span></h3>
+                        <p class="text-muted mt-2">Here are some of the basic types of questions for our customers. For
+                            more
+                            <br>information please contact us.
+                        </p>
+
+                        <a type="button" class="btn btn-success btn-sm mt-2" href="mailto:contact@realenquiries.com"><i
+                                class="mdi mdi-email-outline me-1"></i> Email us your question</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row mt-5">
+                <div class="col-lg-5 offset-lg-1">
+                    <!-- Question/Answer -->
+                    <!-- Manage Enquiries Effortlessly -->
+                    <div>
+                        <div class="faq-question-q-box">Q.</div>
+                        <h4 class="faq-question text-body">How does Real Enquiries manage my enquiries?</h4>
+                        <p class="faq-answer mb-4 pb-1 text-muted">Real Enquiries integrates directly with Daft,
+                            funneling all your enquiries into one systematically organized place.</p>
+                    </div>
+
+                    <!-- Question/Answer -->
+                    <!-- Tenant Application Made Easy -->
+                    <div>
+                        <div class="faq-question-q-box">Q.</div>
+                        <h4 class="faq-question text-body">How does the tenant application process work?</h4>
+                        <p class="faq-answer mb-4 pb-1 text-muted">Tenants can use our modern Application HUB to manage
+                            their application status in real time.</p>
+                    </div>
+
+                    <!-- RTB Integration -->
+                    <div>
+                        <div class="faq-question-q-box">Q.</div>
+                        <h4 class="faq-question text-body">What is RTB integration?</h4>
+                        <p class="faq-answer mb-4 pb-1 text-muted">RTB integration allows you to easily check the
+                            registration status of your properties, keeping you compliant and informed.</p>
+                    </div>
+
+                    <!-- Question/Answer -->
+                    <!-- DocuSign Integration -->
+                    <div>
+                        <div class="faq-question-q-box">Q.</div>
+                        <h4 class="faq-question text-body">How does DocuSign integration streamline document management?
+                        </h4>
+                        <p class="faq-answer mb-4 pb-1 text-muted">With our DocuSign integration, you can generate and
+                            send necessary documents like leases, licenses, and addendums with just a few clicks.</p>
+                    </div>
+
+                </div>
+                <!--/col-lg-5 -->
+
+                <div class="col-lg-5">
+                    <!-- Question/Answer -->
+
+                    <!-- Re-Leased Integration -->
+                    <div>
+                        <div class="faq-question-q-box">Q.</div>
+                        <h4 class="faq-question text-body">How does Re-Leased integration work?</h4>
+                        <p class="faq-answer mb-4 pb-1 text-muted">By linking your Real Enquiries and Re-Leased
+                            accounts, you can manage properties and tenancies in Re-Leased while handling enquiries and
+                            applications in Real Enquiries.</p>
+                    </div>
+
+                    <!-- Software Installation -->
+                    <div>
+                        <div class="faq-question-q-box">Q.</div>
+                        <h4 class="faq-question text-body">Do I need to install any software to use Real Enquiries?</h4>
+                        <p class="faq-answer mb-4 pb-1 text-muted">No, Real Enquiries is a SaaS solution. You can log in
+                            from your browser on any device.</p>
+                    </div>
+
+                    <!-- Data Security -->
+                    <div>
+                        <div class="faq-question-q-box">Q.</div>
+                        <h4 class="faq-question text-body">How does Real Enquiries ensure data security?</h4>
+                        <p class="faq-answer mb-4 pb-1 text-muted">Real Enquiries is hosted on Amazon's reliable and
+                            secure services. These platforms offer robust security measures, ensuring that your data is
+                            always protected.</p>
+                    </div>
+
+                </div>
+                <!--/col-lg-5-->
+            </div>
+            <!-- end row -->
+
+        </div> <!-- end container-->
+    </section>
+    <!-- END FAQ -->
+
+
+    <!-- START CONTACT -->
+    <section class="py-5 bg-light-lighten border-top border-bottom border-light" id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="text-center">
+                        <h3>Get In <span class="text-primary">Touch</span></h3>
+                        <p class="text-muted mt-2">Feel free to get in touch with us. We are always open to discussing
+                            new projects, creative ideas or opportunities to be part of your visions.</p>
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row align-items-center mt-3">
+                <div class="col-md-4">
+                    <p class="text-muted mt-4"><span class="fw-bold">Email Address:</span><br> <span
+                            class="d-block mt-1">contact@realenquiries.com</span></p>
+                </div>
+
+
+            </div>
+        </div>
+    </section>
+    <!-- END CONTACT -->
+
+    <!-- START FOOTER -->
+    <footer class="bg-dark py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6">
+                    <img src="./assets/images/real_enquiries.png" alt="Real Enquiries" class="logo-dark" height="80" />
+                    <p class="text-light text-opacity-50 mt-4">Real Enquiries is a comprehensive solution for managing
+                        your real estate business. We offer a wide range of features to help you manage enquiries and
+                        the onboarding process with ease.</p>
+                </div>
+
+                <div class="col-lg-2 col-md-4 mt-3 mt-lg-0">
+                    <h5 class="text-light">About</h5>
+
+                    <ul class="list-unstyled ps-0 mb-0 mt-3">
+                        <li class="mt-2"><a href="https://crm2.realenquiries.com/website-policy"
+                                class="text-light text-opacity-50" target="_blank">Privacy Police</a>
+                        </li>
+                        <li class="mt-2"><a href="https://crm2.realenquiries.com/cookie-policy" target="_blank"
+                                class="text-light text-opacity-50">Cookie Policy</a></li>
+                        <li class="mt-2"><a href="https://crm2.realenquiries.com/eula"
+                                class="text-light text-opacity-50" target="_blank">EULA</a></li>
+                    </ul>
+
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="mt-5">
+                        <p class="text-light text-opacity-50 mt-4 text-center mb-0">© 2022 -
+                            <script>document.write(new Date().getFullYear())</script> Real Enquiries - All Rights
+                            Reserved
+                        </p>
+                    </div>
+                </div>
+            </div>
         </div>
     </footer>
+    <!-- END FOOTER -->
+    <!-- Vendor js -->
+    <script src="./assets/js/vendor.min.js"></script>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
-        crossorigin="anonymous"></script>
+    <!-- App js -->
+    <script src="./assets/js/app.min.js"></script>
+
 </body>
 
 </html>
